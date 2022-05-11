@@ -1,0 +1,39 @@
+Uso de ponteiros
+
+// se um ponteiro estiver apontando para um método da classe:
+	class vetor2d{
+		};
+	Vetor2d *v1;
+	float a;
+	v1 ->setX(3); (chama ele assim)
+	a = v2 ->getX();
+	
+//Exemplo
+	Vetor 2d v(3,4), *v1;
+	v1=&v;
+	v1 ->setX(4);
+	
+ALOCAÇÃO DINAMICA DE MEMÓRIA
+ALOCAÇÃO INDIVIDUAL C++ E ALOCAÇÃO BLOCO
+C++ | new/delete    | new[]/delete[]
+C   |malloc()/free()| malloc()/free()
+
+//Exemplo
+	int *x;      
+	x = new int; //O operador o tipo a ser alocado.
+	*x = 3;
+	delete x     //O operador delete recebe o ponteiro com o endereço do bloco previamente alocado por new.
+
+	int *x, n=10;
+	x = new int[n]; //Operador new[] recebe o tipo e a qtd de elementos a serem alicadis
+	x[2] = 3; 
+	delete [] x;  //Operador delete[]
+
+Para minha matriz
+
+	int **x;
+	x = new int*[10];
+	delete[]x;
+	
+Alocação usando classes
+

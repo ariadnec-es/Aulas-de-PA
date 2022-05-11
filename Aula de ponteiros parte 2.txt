@@ -1,0 +1,22 @@
+PARTE 1
+#include<iostream>
+
+class Vetor2d{
+private:
+	int x; // como não foi definido se é private ou public ele considera que é privado
+public:
+	void setX(x_){
+		x= x_;
+	}
+	int getX(void){
+		return x;
+	}
+};
+
+int main(){
+	Vetor2d v, *v1;
+	v1 = &v;
+	v1->setX(3);
+	std::cout<<v1->get(x)<<std::endl;
+	return 0;
+}
